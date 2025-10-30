@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    
+
     <header>
         <nav class="navbar navbar-expand-lg bg-dark dynamic-island-nav">
             <div class="container-fluid justify-content-center position-relative">
@@ -45,7 +45,7 @@
     </header>
 
     <section id="about">
-        <div class="container bg-dark border mt-5 p-3 rounded">
+        <div class="container mw-100 bg-dark border mt-5 p-3 rounded">
             <div class="background-container">
                 <div class="blurred-overlay"></div>
                 <div class="content-wrapper">
@@ -63,7 +63,7 @@
                                     designs amazing global adventures. Whether it’s a quick getaway or a dream vacation
                                     abroad, we handle every detail so you can travel with ease and confidence.
                                 </p>
-                                    <p class="text-center fst-italic fs-5 ">✨ Your journey begins with us!</p>
+                                <p class="text-center fst-italic fs-5 ">✨ Your journey begins with us!</p>
                             </div>
 
                         </div>
@@ -71,7 +71,7 @@
     </section>
 
     <section>
-        <div class="container bg-light border mt-5 p-5 rounded">
+        <div class="container mw-100 bg-light border mt-5 p-5 rounded">
             <div class="text-center fs-1 fw-bold mb-2">Cards-Flip + Modal Preview</div>
             <div class="text-center mb-5 text-secondary">Flip cards with quick-view modal and price badge</div>
 
@@ -322,65 +322,71 @@
         </div>
     </section>
 
-    !-- Footer Section -->
-    <footer id="contact">
-        <div class="container d-flex flex-column align-items-center text-dark py-5 bg-light border mt-5 rounded">
+    <!-- !-- Footer Section -->
+    <section id="contact">
+        <div class="container mw-100 mb-5 flex-column align-items-center text-dark py-5 bg-light border mt-5 rounded">
             <div class="row">
 
-        <!-- Contact Info & Call-to-Action -->
-            <div class="col-12 mb-4 text-center"> 
-                <p class="text-uppercase mb-3 fw-bold fs-1">Contact Us</p>
-                <h2 class="mb-3 fw-bold fs-3">Let’s Discuss Your Vision With Us</h2>
-                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#callModal">Schedule a Call Now</button>
-            
-            <!-- Modal -->
-            <div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content border-0 shadow-lg rounded-4">
-                    <div class="modal-header border-0">
-                    <h5 class="modal-title fs-3" id="callModalLabel">Contact Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                    <div class="mb-3">
-                        <i class="bi bi-person-circle display-4 text-primary"></i>
-                        <h5 class="mt-2 mb-0">JSR Travels</h5>
-                        <p class="fw-bold">+94 77 123 4567<p>
-                    </div>
-                    <hr>
-                    <button class="btn btn-success rounded-circle p-3">
-                        <i class="bi bi-telephone-fill fs-3"></i>
-                    </button>
-                    <p class="mt-3 text-muted">Tap to start call</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-            
-                <h4 class="mt-3 text-decoration-underline">Or</h4>
-            </div>
+                <!-- Contact Info & Call-to-Action -->
+                <div class="col-12 mb-4 text-center">
+                    <p class="text-uppercase mb-3 fw-bold fs-1">Contact Us</p>
+                    <h2 class="mb-3 fw-bold fs-3">Let’s Discuss Your Vision With Us</h2>
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#callModal">Schedule a Call Now</button>
 
-        <!-- Contact Form -->
-            <div class="col-md-6 mb-4 text-start">
-                <h5 class="text-uppercase fw-bold mb-3">Your Feedback</h5>
-                <form>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    <!-- Modal -->
+                    <div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content border-0 shadow-lg rounded-4">
+                                <div class="modal-header border-0">
+                                    <h5 class="modal-title fs-3" id="callModalLabel">Contact Details</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="mb-3">
+                                        <i class="bi bi-person-circle display-4 text-primary"></i>
+                                        <h5 class="mt-2 mb-0">JSR Travels</h5>
+                                        <p class="fw-bold">+94 77 123 4567
+                                        <p>
+                                    </div>
+                                    <hr>
+                                    <button class="btn btn-success rounded-circle p-3">
+                                        <i class="bi bi-telephone-fill fs-3"></i>
+                                    </button>
+                                    <p class="mt-3 text-muted">Tap to start call</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" placeholder="Your Email" required>
-                    </div>
-                    <div class="mb-3">
-                        <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
 
-                        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                            <div id="successToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
-                                <div class="d-flex">
-                                    <div class="toast-body">Message successfully sent!</div>
-                                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    <h4 class="mt-3 text-decoration-underline">Or</h4>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-md-6 mb-4 text-start">
+                    <h5 class="text-uppercase fw-bold mb-3">Your Feedback</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+
+                            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                                <div id="successToast" class="toast align-items-center text-bg-success border-0"
+                                    role="alert" aria-live="assertive" aria-atomic="true">
+                                    <div class="d-flex">
+                                        <div class="toast-body">Message successfully sent!</div>
+                                        <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                                            data-bs-dismiss="toast" aria-label="Close"></button>
                                     </div>
                                 </div>
                             </div>
@@ -388,44 +394,54 @@
                         </div>
                     </form>
                 </div>
-        
-                        <!-- Toast Notification  -->
-                    
-                
 
-       <!-- Map & Social Links  -->
-            <div class="col-md-6 mb-4 text-start">
-                <h5 class="text-uppercase fw-bold mb-3">Find Us</h5>
-            
-            <!-- Google Map -->
-            <div class="mb-4 rounded-3 overflow-hidden">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62930.05985406283!2d79.98722651102295!3d9.67003971130702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe53fd7be66aa5%3A0xc7da0d9203baf512!2sJaffna%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1761836504079!5m2!1sen!2sus" width="100%" height="250" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+                <!-- Toast Notification  -->
+
+
+
+                <!-- Map & Social Links  -->
+                <div class="col-md-6 mb-4 text-start">
+                    <h5 class="text-uppercase fw-bold mb-3">Find Us</h5>
+
+                    <!-- Google Map -->
+                    <div class="mb-4 rounded-3 overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62930.05985406283!2d79.98722651102295!3d9.67003971130702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe53fd7be66aa5%3A0xc7da0d9203baf512!2sJaffna%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1761836504079!5m2!1sen!2sus"
+                            width="100%" height="250" style="border:1;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div>
+                        <a href="https://www.facebook.com/" class="text-decoration-none me-3 text-dark"><i
+                                class="bi bi-facebook fs-4"></i></a>
+                        <a href="https://www.instagram.com/" class="text-decoration-none me-3 text-dark"><i
+                                class="bi bi-instagram fs-4"></i></a>
+                        <a href="https://x.com/" class="text-decoration-none me-3 text-dark"><i
+                                class="bi bi-twitter fs-4"></i></a>
+                        <a href="https://www.youtube.com/" class="text-decoration-none text-dark"><i
+                                class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Social Media Links -->
-            <div>
-            <a href="https://www.facebook.com/" class="text-decoration-none me-3 text-dark"><i class="bi bi-facebook fs-4"></i></a>
-            <a href="https://www.instagram.com/" class="text-decoration-none me-3 text-dark"><i class="bi bi-instagram fs-4"></i></a>
-            <a href="https://x.com/" class="text-decoration-none me-3 text-dark"><i class="bi bi-twitter fs-4"></i></a>
-            <a href="https://www.youtube.com/" class="text-decoration-none text-dark"><i class="bi bi-youtube fs-4"></i></a>
+        <!-- Copyright -->
+        <footer>
+            <div class="text-light fw-bold">
+                <p class="p-3 mt-2">&copy; 2025 TravelWithUs | All Rights Reserved</p>
             </div>
-        </div>
+        </footer>
 
-        </div>
-    </div>
+        <!-- Bootstrap Icons (include in <head>) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-     <!-- Copyright -->
-        <div class="text-dark mb-0 mt-4 pt-4 fw-bold">
-            <p class="mb-0 pb-4">&copy; 2025 TravelWithUs | All Rights Reserved</p>
-        </div>
-    </footer>
 
-<!-- Bootstrap Icons (include in <head>) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-          
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+</body>
 
 </html>
