@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSR Travels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> <!-- Custom styles below -->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark dynamic-island-nav">
+            <div class="container-fluid justify-content-center position-relative">
+                <div class="dynamic-island">
+                    <a class="navbar-brand text-white fw-bold" href="#">JSR Travels</a>
+                    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container bg-light border mt-5 p-5 rounded">
+            <h1>About</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="container bg-light border mt-5 p-5 rounded">
+            <div class="text-center fs-1 fw-bold mb-2">Cards-Flip + Modal Preview</div>
+            <div class="text-center mb-5 text-secondary">Flip cards with quick-view modal and price badge</div>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./assets/img2.jpg" class="card-img-top" alt="Headphones" />
+                        <div class="card-body">
+                            <h5 class="card-title">Sleek Headphones</h5>
+                            <p class="card-text text-muted">Wireless, noise-cancelling</p>
+                            <p class="fw-semibold">129</p>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#modal1">Quick View</button>
+                                <button class="btn btn-primary btn-sm ms-2">Buy</button>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <small class="text-body-secondary">Updated 2 days ago</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./assets/img1.jpg" class="card-img-top" alt="Smart Watch" />
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Watch</h5>
+                            <p class="card-text text-muted">Fitness tracking, heart rate monitor</p>
+                            <p class="fw-semibold">199</p>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#modal2">Quick View</button>
+                                <button class="btn btn-primary btn-sm ms-2">Buy</button>
+                            </div>
+                        </div>
+                        <div class="card-footer  bg-light">
+                            <small class="text-body-secondary">Updated 1 day ago</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./assets/img3" class="card-img-top" alt="Wireless Speaker" />
+                        <div class="card-body">
+                            <h5 class="card-title">Wireless Speaker</h5>
+                            <p class="card-text text-muted">Portable, waterproof, high bass</p>
+                            <p class="fw-semibold">189</p>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#modal3">Quick View</button>
+                                <button class="btn btn-primary btn-sm ms-2">Buy</button>
+                            </div>
+                        </div>
+                        <div class="card-footer  bg-light">
+                            <small class="text-body-secondary">Updated today</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 1 -->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sleek Headphones</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="./assets/img2.jpg" class="modal-img mb-3" alt="Headphones" />
+                        <p>High-quality wireless headphones with noise-cancellation feature.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Smart Watch</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="./assets/img1.jpg" class="modal-img mb-3" alt="Smart Watch" />
+                        <p>Track your fitness, monitor your heart rate, and stay connected on the go.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Wireless Speaker</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="./assets/img3" class="modal-img mb-3" alt="Wireless Speaker" />
+                        <p>Enjoy deep bass and crystal-clear sound with this portable waterproof speaker.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container bg-light border mt-5 p-5 rounded">
+            <div class="text-center fs-1 fw-bold mb-2">Cards-Flip + Modal Preview</div>
+            <div class="text-center mb-5 text-secondary">Flip cards with quick-view modal and price badge</div>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./assets/img2.jpg" class="card-img-top" alt="Headphones" />
+                        <div class="card-body">
+                            <h5 class="card-title">Sleek Headphones</h5>
+                            <p class="card-text text-muted">Wireless, noise-cancelling</p>
+                            <p class="fw-semibold">129</p>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#modal1">Quick View</button>
+                                <button class="btn btn-primary btn-sm ms-2">Buy</button>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <small class="text-body-secondary">Updated 2 days ago</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./assets/img1.jpg" class="card-img-top" alt="Smart Watch" />
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Watch</h5>
+                            <p class="card-text text-muted">Fitness tracking, heart rate monitor</p>
+                            <p class="fw-semibold">199</p>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#modal2">Quick View</button>
+                                <button class="btn btn-primary btn-sm ms-2">Buy</button>
+                            </div>
+                        </div>
+                        <div class="card-footer  bg-light">
+                            <small class="text-body-secondary">Updated 1 day ago</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./assets/img3" class="card-img-top" alt="Wireless Speaker" />
+                        <div class="card-body">
+                            <h5 class="card-title">Wireless Speaker</h5>
+                            <p class="card-text text-muted">Portable, waterproof, high bass</p>
+                            <p class="fw-semibold">189</p>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#modal3">Quick View</button>
+                                <button class="btn btn-primary btn-sm ms-2">Buy</button>
+                            </div>
+                        </div>
+                        <div class="card-footer  bg-light">
+                            <small class="text-body-secondary">Updated today</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 1 -->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sleek Headphones</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="./assets/img2.jpg" class="modal-img mb-3" alt="Headphones" />
+                        <p>High-quality wireless headphones with noise-cancellation feature.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Smart Watch</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="./assets/img1.jpg" class="modal-img mb-3" alt="Smart Watch" />
+                        <p>Track your fitness, monitor your heart rate, and stay connected on the go.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Wireless Speaker</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="./assets/img3" class="modal-img mb-3" alt="Wireless Speaker" />
+                        <p>Enjoy deep bass and crystal-clear sound with this portable waterproof speaker.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container bg-light border mt-5 p-5 rounded">
+            <h1>Contact</h1>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 JSR Travels. All rights reserved.</p>
+        <a href="#" class="back-to-top">Back to top</a>
+    </div>
+</footer>
+
+</html>
