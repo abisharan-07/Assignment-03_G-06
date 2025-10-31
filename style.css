@@ -3,21 +3,18 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: 'Poppins', sans-serif;
+   font-family: 'Times New Roman', Times, serif;
  }
 
  body {
-   background-color: #51acc0;
- }
-
-  /* #about {
+   background-color: rgb(236, 236, 207);
    position: relative;
    width: 100%;
-   background-image: url(assets/img5.jpg);
+   background-image: url(assets/bg.jpg);
    background-size: cover;
    background-position: center;
-   padding-bottom: 20px;
- } */
+
+ }
 
  /* Navbar */
  .dynamic-island-nav {
@@ -34,7 +31,7 @@
    transition: all 0.4s ease;
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: space-between;
    width: 90%;
    max-width: 750px;
  }
@@ -52,7 +49,7 @@
  }
 
  .navbar-nav .nav-link:hover {
-   color: #51acc0;
+   color: rgb(236, 236, 207);
    transform: translateY(-2px);
  }
 
@@ -66,52 +63,24 @@
  }
 
  .dropdown-menu {
-  background-color: black;
+   background-color: black;
  }
 
  .dropdown-item {
-  color: white;
+   color: white;
  }
 
  .signin {
-  background-color: white;
-  color: black;
-  border: white;
-  border-radius: 30px;
+   background-color: white;
+   color: black;
+   border: white;
+   border-radius: 30px;
  }
 
- .signin:hover{
-      background-color:#51acc0;
-      transform: translateY(-2px);
+ .signin:hover {
+   background-color: rgb(236, 236, 207);
+   transform: translateY(-2px);
  }
-
- 
-
- /* About */
-    .background-container {
-        position: relative;
-        width: 100%;
-        background-image: url(assets/img6.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-
-    .blurred-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        backdrop-filter: blur(5px); 
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-
-    .content-wrapper {
-        position: relative; 
-        z-index: 1;
-        padding: 20px; 
-        color: white;
-    }
 
  .card img {
    height: 200px;
@@ -159,4 +128,22 @@
    margin-top: 2px;
    color: white;
    text-decoration: none;
+ }
+
+ .form-container {
+   max-width: 420px;
+   margin: 50px auto;
+   background: #fff;
+   padding: 2rem;
+   border-radius: 8px;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+ }
+
+ .toggle-link {
+   cursor: pointer;
+   color: #0d6efd;
+ }
+
+ .toggle-link:hover {
+   text-decoration: underline;
  }
