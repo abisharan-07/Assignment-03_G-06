@@ -147,3 +147,9 @@
  .toggle-link:hover {
    text-decoration: underline;
  }
+
+ #contact {
+  background-color: #333;
+  width: auto;
+  height: 800px;
+ }
